@@ -81,7 +81,7 @@ const Focus = {
             <button class="timer-btn primary" onclick="Focus.toggleTimer()" id="timer-toggle-btn">
               <i class="fa-solid fa-${this.isRunning ? 'pause' : 'play'}"></i>
             </button>
-            <button class="timer-btn" onclick="Focus.saveSession()" title="Salvar Sessão" ${!this.seconds ? 'disabled style="opacity:0.4"' : ''}>
+            <button class="timer-btn" onclick="Focus.saveSession()" title="Salvar Sessão">
               <i class="fa-solid fa-floppy-disk"></i>
             </button>
           </div>
