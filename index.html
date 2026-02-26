@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>StudyFlow — Gestão Acadêmica</title>
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Design System + App CSS -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+    <div class="loading-text">Carregando StudyFlow…</div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Mobile Sidebar Toggle -->
+  <button class="sidebar-toggle" id="sidebar-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <a href="#home" class="sidebar-logo">
+          <div class="sidebar-logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="sidebar-logo-text">Study<span>Flow</span></div>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-label">Principal</div>
+        <a class="nav-item active" data-page="home" href="#home">
+          <i class="fa-solid fa-house"></i> Início
+        </a>
+        <a class="nav-item" data-page="subjects" href="#subjects">
+          <i class="fa-solid fa-book-open"></i> Matérias
+        </a>
+        <a class="nav-item" data-page="timeline" href="#timeline">
+          <i class="fa-solid fa-calendar-days"></i> Cronograma
+        </a>
+
+        <div class="sidebar-section-label">Acadêmico</div>
+        <a class="nav-item" data-page="grades" href="#grades">
+          <i class="fa-solid fa-chart-column"></i> Notas
+        </a>
+        <a class="nav-item" data-page="flashcards" href="#flashcards">
+          <i class="fa-solid fa-brain"></i> Flashcards
+        </a>
+        <a class="nav-item" data-page="roadmap" href="#roadmap">
+          <i class="fa-solid fa-route"></i> Roadmap
+        </a>
+
+        <div class="sidebar-section-label">Ferramentas</div>
+        <a class="nav-item" data-page="locker" href="#locker">
+          <i class="fa-solid fa-folder-open"></i> Armário Digital
+        </a>
+        <a class="nav-item" data-page="focus" href="#focus">
+          <i class="fa-solid fa-crosshairs"></i> Focus Mode
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="footer-row">
+          <div class="footer-info">
+            <div class="credits-name">Guilherme Rampazzo</div>
+            <a href="https://www.codermaster.com.br" target="_blank">www.codermaster.com.br</a>
+          </div>
+          <div class="footer-actions">
+            <button id="theme-toggle" class="btn btn-icon" title="Alternar tema" aria-pressed="false">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+      <!-- Dynamic content injected here -->
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/db.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/grades.js"></script>
+  <script src="js/flashcards.js"></script>
+  <script src="js/locker.js"></script>
+  <script src="js/roadmap.js"></script>
+  <script src="js/focus.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

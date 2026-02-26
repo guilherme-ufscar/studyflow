@@ -1,2 +1,24 @@
-# Ignorar arquivo de escopo sensível
+# Sensível
 escopo.md
+.env*
+.idea/
+.vscode/
+.gemini/
+
+# Dependências
+node_modules/
+
+# Build e Saída
+dist/
+www/
+android/
+ios/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db

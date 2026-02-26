@@ -1,0 +1,31 @@
+{
+  "name": "flow-electron",
+  "version": "0.1.0",
+  "description": "Electron wrapper for Flow site",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.flow",
+    "productName": "StudyFlow",
+    "icon": "icon-512.png",
+    "win": {
+      "icon": "icon-512.png",
+      "target": [
+        "nsis"
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.9.8",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.1.0",
+    "@capacitor/cli": "^8.1.0",
+    "@capacitor/core": "^8.1.0"
+  }
+}

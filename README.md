@@ -1,9 +1,3 @@
-# StudyFlow
-
-Este `README.md` foi gerado automaticamente com base no `escopo.md`.
-
----
-
 # StudyFlow — Escopo do Projeto
 
 ## 1. Visão Geral
